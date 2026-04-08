@@ -45,7 +45,7 @@ if btns: js("arguments[0].click();", btns[0])
 wait.until(EC.presence_of_element_located((By.ID, 'idNo')))
 js("document.querySelectorAll('.blockUI').forEach(e=>e.remove())")
 
-for id_, val in [('idNo','A1234567890'),('birthdayStr','0900101'),('name','王小名'),('contactTel','0912345678'),('email','123@gmail.com')]:
+for id_, val in [('idNo','A1234567890'),('birthdayStr','0900101'),('name','王皮炎'),('contactTel','0912345678'),('email','PIYAN@gmail.com')]:
     driver.find_element(By.ID, id_).send_keys(val)
 
 time.sleep(300)
